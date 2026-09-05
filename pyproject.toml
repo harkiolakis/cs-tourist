@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "turist"
+version = "0.1.0"
+description = "TURIST: pairwise 3D protein structure alignment via trace-defined local Cα environment signatures"
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "MIT" }
+authors = [{ name = "Nicholas Harkiolakis" }]
+dependencies = [
+    "numpy>=1.23",
+    "biopython>=1.80",
+]
+
+[project.scripts]
+turist = "turist.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["turist*"]
