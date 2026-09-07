@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "turist"
-version = "0.1.0"
+version = "2.0.0"
 description = "TURIST: pairwise 3D protein structure alignment via trace-defined local Cα environment signatures"
 readme = "README.md"
 requires-python = ">=3.9"
